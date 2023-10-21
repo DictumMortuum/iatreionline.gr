@@ -4,19 +4,19 @@ title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
 
 [params]
-    name = "Anthony Russel"
-    description = "A mystery person"
-    email = "anthony.russel42@example.com"
+    name = "Αλέξανδρος Σακελλαρίου"
+    description = "Παιδιατρικό Ιατρείο"
+    email = "pediatrics.sakellariou@gmail.com"
     phone = "+234 23 9873237"
-    address = "234 Hidden Pond Road, Ashland City, TN 37015"
+    address = "Βασιλέως Αλεξάνδρου 14-20, Περιστέρι 121 34, Ελλάδα"
     year = 2017
-    avatar = "images/guy.jpg"
+    avatar = "assets/background.png"
     avatarclass = "circle"
     background = ""
-    banner = "images/bg_head.jpg"
+    banner = "assets/transparent.png"
     favicon = "images/gt_favicon.png"
     DateForm = "January 2, 2006"
-    author = "Sergey Pozhilov (GetTemplate.com)"
+    author = "Δημήτρης Ραβιόλος"
 
     showSubheader = true
     showServices = true
