@@ -3,4 +3,4 @@ type = "subheader"
 title = ""
 +++
 
-Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. you [measure](/about) yourself by the people who measure themselves by you. it only took me [six days](/sidebar-right).
+Το iatreionline είναι η ηλεκτρονική έκφραση της προσπάθειας μας για τη βελτίωση της εξυπηρέτησης και της επικοινωνίας των ασθενών με τα ιατρεία μας. Μέσω της ιστοσελίδας ο κάθε ενδιαφερόμενος θα μπορεί να μας γνωρίσει, να εξερευνήσει τις παροχές και τις δυνατότητες του ιατρείου, να ρυθμίσει διαδικαστικά θέματα και να οργανώσει την επίσκεψή του. Επιπλέον παρέχετε οπτικοακουστικό υλικό ( άρθρα, vlogs, shorts, podcast) με σκοπό την ενημέρωση επί ιατρικών και άλλων καθημερινών θεμάτων.

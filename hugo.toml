@@ -4,7 +4,7 @@ title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
 
 [params]
-    name = "Αλέξανδρος Σακελλαρίου"
+    name = "iatreionline"
     description = "Παιδιατρικό Ιατρείο"
     email = "pediatrics.sakellariou@gmail.com"
     phone = "+234 23 9873237"
