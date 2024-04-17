@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.0e87d708.js",
-    "static/js/453.5779cf73.chunk.js": "/static/js/453.5779cf73.chunk.js",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.0e87d708.js.map": "/static/js/main.0e87d708.js.map",
-    "453.5779cf73.chunk.js.map": "/static/js/453.5779cf73.chunk.js.map"
+    "main.css": "/iatreionline.gr/static/css/main.e6c13ad2.css",
+    "main.js": "/iatreionline.gr/static/js/main.91dc879e.js",
+    "static/js/453.5779cf73.chunk.js": "/iatreionline.gr/static/js/453.5779cf73.chunk.js",
+    "index.html": "/iatreionline.gr/index.html",
+    "main.e6c13ad2.css.map": "/iatreionline.gr/static/css/main.e6c13ad2.css.map",
+    "main.91dc879e.js.map": "/iatreionline.gr/static/js/main.91dc879e.js.map",
+    "453.5779cf73.chunk.js.map": "/iatreionline.gr/static/js/453.5779cf73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.0e87d708.js"
+    "static/js/main.91dc879e.js"
   ]
 }
