@@ -15,11 +15,13 @@ function App() {
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="https://dictummortuum.github.io/iatreionline.gr/#/">Home</a></li>
-              <li><a href="https://dictummortuum.github.io/iatreionline.gr/#/paidiatriko">Παιδιατρικo</a></li>
-              <li><a href="https://dictummortuum.github.io/iatreionline.gr/#/allergiologiko">Αλλεργιολογικo</a></li>
-              <li><a href="https://dictummortuum.github.io/iatreionline.gr/#/psych">Ψυχολoγος</a></li>
-              <li><a href="https://dictummortuum.github.io/iatreionline.gr/#/diet">Διαιτολόγος</a></li>
+              <li class="active"><a href="https://iatreionline.gr/#/">Home</a></li>
+              <li><a href="https://iatreionline.gr/#/paidiatriko">Παιδιατρικo</a></li>
+              <li><a href="https://iatreionline.gr/#/allergiologiko">Αλλεργιολογικo</a></li>
+              <li><a href="https://iatreionline.gr/#/psych">Ψυχολoγος</a></li>
+              <li><a href="https://iatreionline.gr/#/diet">Διαιτολoγος</a></li>
+              <li><a href="https://iatreionline.gr/#/map">Χάρτης</a></li>
+              <li><a href="https://iatreionline.gr/#/contact">Επικοινωνια</a></li>
             </ul>
           </div>
         </div>

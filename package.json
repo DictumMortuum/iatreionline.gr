@@ -1,7 +1,7 @@
 {
   "name": "site",
-  "version": "0.1.0",
-  "homepage": "https://dictummortuum.github.io/iatreionline.gr",
+  "version": "0.2.0",
+  "homepage": "https://iatreionline.gr",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
