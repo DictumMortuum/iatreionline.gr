@@ -4,6 +4,7 @@
 // import Avatar from '@mui/material/Avatar';
 // import DoneIcon from '@mui/icons-material/Done';
 import CardChild from './components/CardChild';
+import Recent from './components/Recent';
 
 const YoutubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
@@ -19,7 +20,6 @@ const YoutubeEmbed = ({ embedId }) => (
   </div>
 );
 
-
 const Main = () => {
   return (
     <main id="main">
@@ -28,9 +28,21 @@ const Main = () => {
           <h2 class="section-title"><span>παιδιατρικο ιατρειο</span></h2>
         </div>
 
+
+        <div class="row section recentworks topspace">
+          <div class="thumbnails recentworks row">
+            <Recent img="assets/images/lowres/-1.jpg" className="col-xs-12 col-sm-6 col-md-4 col-lg-4" />
+            <Recent img="assets/images/lowres/-2.jpg" />
+            <Recent img="assets/images/lowres/-3.jpg" />
+            <Recent img="assets/images/lowres/-4.jpg" />
+          </div>
+        </div>
+
+
+{/*
         <div class="row section recentworks topspace">
           <img src="assets/images/paidiatriko.png" alt="" style={{ display: "block", margin: "auto", width: "70%" }} />
-        </div>
+        </div> */}
 
         <div class="row section featured topspace">
           <h2 class="section-title"><span>βιογραφικο</span></h2>
@@ -56,13 +68,13 @@ const Main = () => {
         <div class="row section featured topspace">
           <h2 class="section-title"><span>υπηρεσιες</span></h2>
           <div class="col-md-6">
-            <CardChild desc="προγεννητική επισκεψη">
+            <CardChild desc="προγεννητική επισκεψη" img="assets/svg/3.svg">
               <p class="lead ">Συνήθως γίνεται στο τρίτο τρίμηνο της κύησης. Συστήνεται σε όλες τις οικογένειες που περιμένουν παιδί και ιδιαίτερα όταν είναι το πρώτο τους. Σε αυτή την πρώτη γνωριμία οι μέλλοντες γονείς θα εξοικειωθούν με το χώρο και το προσωπικό ώστε να εγκατασταθεί μια σχέση υποστήριξης και εμπιστοσύνης για το μέλλον. Συλλέγονται χρήσιμες πληροφορίες για το οικογενειακό ιστορικό και την πορεία της κύησης, γίνεται ενημέρωση για θέματα ανοσοποίησης (εμβόλια) και διατροφής (1000 ημέρες) και παρέχετε ενημερωτικό υλικό.Κατά τη διάρκεια του ραντεβού μπορεί να αναγνωριστούν καταστάσεις που απαιτούν αντιμετώπιση ή χρήζουν ειδική διαχείρηση (τροφικές ή φαρμακευτικές αλλεργίες, ανάγκη για ψυχολογική υποστήριξη).</p>
             </CardChild>
           </div>
 
           <div class="col-md-6">
-            <CardChild desc="νεογνική επισκεψη">
+            <CardChild desc="νεογνική επισκεψη" img="assets/svg/4.svg">
               <p class="lead ">Η πρώτη επίσκεψη συνήθως γίνεται στο οικείο περιβάλλον του σπιτιού. Πέρα από την κλινική εξέταση, λαμβάνονται πληροφορίες για το περιγεννητικό ιστορικό και δίνονται οδηγίες για τη σίτηση μητέρας και παιδιού (θηλασμός, υποκατάστατα ξένου γάλατος). Απαντώνται όλες οι ερωτήσεις του ζεύγους και του οικογενειακού περιβάλλοντος και γίνονται συστάσεις για τις προκλήσεις που θα εμφανιστούν. Επιπλέον θα συζητηθούν εκτενώς και με προσοχή θέματα ασφάλειας προκειμένου να μειωθεί ο κίνδυνος τραυματισμού του νεογνού.</p>
             </CardChild>
           </div>
@@ -80,7 +92,7 @@ const Main = () => {
           </div>
 
           <div class="col-md-6">
-            <CardChild desc="Εφηβική εξέταση">
+            <CardChild desc="Εφηβική εξέταση" img="assets/svg/11.svg">
               <p class="lead ">Εκτίμηση των εφήβων σχετικά με θέματα που αφορούν:
                 <ul>
                   <li>Ανάπτυξη - αύξηση - ενήβωση</li>
@@ -95,13 +107,13 @@ const Main = () => {
           </div>
 
           <div class="col-md-6">
-            <CardChild desc="Συμβουλευτική μητρικου θηλασμου">
+            <CardChild desc="Συμβουλευτική μητρικου θηλασμου" img="assets/svg/5.svg">
               <p class="lead ">Δίνονται οδηγίες για τη διαδικασία, τη συχνότητα και τη διάρκεια των γευμάτων, τη δίαιτα της μητέρας (τροφικές αλλεργίες, δυσανεξίες, εκούσιος αποκλεισμός ομάδων τροφών) και άλλες καταστάσεις που μπορεί να προβληματίσουν τους γονείς όπως λοιμώξεις, χρήση φαρμάκων, συμπληρωμάτων, ουσιών.</p>
             </CardChild>
           </div>
 
           <div class="col-md-6">
-            <CardChild desc="Ανοσοποίηση - χρόνιες θεραπείες">
+            <CardChild desc="Ανοσοποίηση - χρόνιες θεραπείες" img="assets/svg/7.svg">
               <p class="lead ">Παρέχεται επίσημη ενημέρωση μέσω φυλλαδίων αλλά και επεξηγήσεις για κάθε εμβολιασμό που θα πραγματοποιηθεί. Επιπλέον Λαμβάνουν χώρα χρονιές θεραπείες (πρώιμη ήβη) και διαγνωστικές εξετάσεις (mantoux) μετά από συνεννόηση.</p>
             </CardChild>
           </div>

@@ -15,13 +15,13 @@ function App() {
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="https://iatreionline.gr/#/">Home</a></li>
-              <li><a href="https://iatreionline.gr/#/paidiatriko">Παιδιατρικo</a></li>
-              <li><a href="https://iatreionline.gr/#/allergiologiko">Αλλεργιολογικo</a></li>
-              <li><a href="https://iatreionline.gr/#/psych">Ψυχολoγος</a></li>
-              <li><a href="https://iatreionline.gr/#/diet">Διαιτολoγος</a></li>
-              <li><a href="https://iatreionline.gr/#/map">Χάρτης</a></li>
-              <li><a href="https://iatreionline.gr/#/contact">Επικοινωνια</a></li>
+              <li class="active"><a href={`${process.env.REACT_APP_BASE_URL}/#/`}>Home</a></li>
+              <li><a href={`${process.env.REACT_APP_BASE_URL}/#/paidiatriko`}>Παιδιατρικo</a></li>
+              <li><a href={`${process.env.REACT_APP_BASE_URL}/#/allergiologiko`}>Αλλεργιολογικo</a></li>
+              <li><a href={`${process.env.REACT_APP_BASE_URL}/#/psych`}>Ψυχολoγος</a></li>
+              <li><a href={`${process.env.REACT_APP_BASE_URL}/#/diet`}>Διαιτολoγος</a></li>
+              {/* <li><a href={`${process.env.REACT_APP_BASE_URL}/#/map`}>Χαρτης</a></li> */}
+              <li><a href={`${process.env.REACT_APP_BASE_URL}/#/contact`}>Επικοινωνια</a></li>
             </ul>
           </div>
         </div>

@@ -103,15 +103,13 @@ const Main = () => {
         <div class="row section recentworks topspace">
           <h2 class="section-title"><span>Φωτογραφιες</span></h2>
           <div class="thumbnails recentworks row">
-            <Recent img="assets/images/DSC_8990.jpg" />
-            <Recent img="assets/images/DSC_8991.jpg" />
-            <Recent img="assets/images/DSC_8994.jpg" />
-            <Recent img="assets/images/DSC_9003.jpg" />
-            <Recent img="assets/images/DSC_9005.jpg" />
-            <Recent img="assets/images/DSC_9006.jpg" />
-            <Recent img="assets/images/DSC_9008.jpg" />
-            <Recent img="assets/images/DSC_9013.jpg" />
-            <Recent img="assets/images/DSC_9015.jpg" />
+            <Recent img="assets/images/lowres/-7.jpg" />
+            <Recent img="assets/images/lowres/-8.jpg" />
+            <Recent img="assets/images/lowres/-9.jpg" />
+            <Recent img="assets/images/lowres/-10.jpg" />
+            <Recent img="assets/images/lowres/-11.jpg" />
+            <Recent img="assets/images/lowres/-14.jpg" />
+            <Recent img="assets/images/lowres/-15.jpg" />
           </div>
         </div>
 
