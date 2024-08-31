@@ -1,12 +1,13 @@
 // import Service from './components/Service';
 import Recent from './components/Recent';
 // import Card from './components/Card';
-import Grid from '@mui/material/Grid';
+// import Grid from '@mui/material/Grid';
 import DoneIcon from '@mui/icons-material/Done';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import Calendar from './components/Calendar';
 
 const Main = () => {
   return (
@@ -123,17 +124,6 @@ const Main = () => {
                   <NotificationsIcon />
                 </Avatar>
               </ListItemAvatar>
-              <p class="lead ">Για τη φροντίδα των βρεφών υπάρχει βραστήρας, αποστειρωτής καθώς και σκεύη μιας χρήσεως.Επιπλέον για τους επισκέπτες υπάρχει ψύκτες με εμφιαλωμένο νερό και ψυγείο για φύλαξη ευαίσθητων προϊόντων.</p>
-            </ListItem>
-          </div>
-
-          <div class="col-md-12">
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar>
-                  <NotificationsIcon />
-                </Avatar>
-              </ListItemAvatar>
               <p class="lead ">Στους χώρους υγειονομικού ενδιαφέροντος όπως και στο ιατρείου συστήνεται η χρήση προστατευτικής μάσκας προς αποφυγή διάδοσης τυχόν λοιμώξεων μεταξύ των ασθενών.</p>
             </ListItem>
           </div>
@@ -148,7 +138,7 @@ const Main = () => {
               <p class="lead ">Το ιατρείο θα παραμείνει κλειστό για το τριήμερο του Αγίου Πνεύματος. Η επικοινωνία των ασθενών θα γίνεται στο κινητό της γραμματείας ή των ιατρών.</p>
             </ListItem>
           </div>
-
+{/*
           <div class="col-md-12">
             <ListItem>
               <ListItemAvatar>
@@ -257,9 +247,14 @@ const Main = () => {
                 </Grid>
               </Grid>
             </ListItem>
-          </div>
-
+          </div> */}
         </div>
+
+        <div class="row section featured topspace">
+          <h2 class="section-title"><span>ωραριο λειτουργιας</span></h2>
+          <Calendar />
+        </div>
+
       </div>
     </main>
   );

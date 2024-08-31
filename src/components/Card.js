@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Grid from '@mui/material/Grid';
 
@@ -31,7 +31,7 @@ const Component = ({ desc, more, img }) => {
   };
 
   return (
-    <Card raised={true} sx={{ minHeight: 250, padding: 2, margin: 1}}>
+    <Card sx={{ minHeight: 170, padding: 1, margin: 1 }}>
       <Grid container>
         <Grid xs={10}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -51,7 +51,7 @@ const Component = ({ desc, more, img }) => {
             </CardActions>}
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography paragraph>{more}</Typography>
+                <p class="lead">{more}</p>
               </CardContent>
             </Collapse>
           </Box>

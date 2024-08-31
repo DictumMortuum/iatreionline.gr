@@ -30,7 +30,7 @@ const Component = ({ desc, children, img="https://placehold.co/400" }) => {
   };
 
   return (
-    <Card raised={true} sx={{ minHeight: 250, padding: 2, margin: 1}}>
+    <Card sx={{ minHeight: 170, padding: 1, margin: 1 }}>
       <Grid container>
         <Grid xs={10}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
