@@ -198,9 +198,9 @@ a:hover {
   color: #e93675;
 }
 .lead {
-  font-weight: 500;
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-weight: 400;
+  /* font-size: 21px; */
+  font-size: 1.2rem;
 }
 .text-msg {
   line-height: 1.7em;
