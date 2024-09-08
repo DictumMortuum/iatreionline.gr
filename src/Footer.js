@@ -41,7 +41,7 @@ const Paidiatrics = ({ title, mobile, email }) => {
 
 function App() {
   return (
-		<footer id="footer" style={{ marginTop: 50, paddingBottom: 40 }}>
+		<footer id="footer" style={{ paddingBottom: 40, marginTop: 10 }}>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 widget">

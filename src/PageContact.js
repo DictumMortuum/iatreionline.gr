@@ -1,11 +1,50 @@
 // import Card from './components/Card';
 // import Grid from '@mui/material/Grid';
+import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import { Button } from '@mui/material';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
+const BasicSelect = ({ choice, setChoice }) => {
+  const handleChange = (event) => {
+    setChoice(event.target.value);
+  };
+
+  return (
+    <Box>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Ιατρείο</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={choice}
+          label="Ιατρείο"
+          onChange={handleChange}
+        >
+          <MenuItem value={1}>Παιδιατρικό</MenuItem>
+          <MenuItem value={2}>Αλλεργιολογικό</MenuItem>
+        </Select>
+      </FormControl>
+    </Box>
+  );
+}
+
+const contactPaidiatrics = choice => {
+  if (choice === 1) {
+    return "84a4dbaa-4892-46a4-8c2c-c50835223794"
+  } else {
+    return ""
+  }
+}
 
 const Main = () => {
+  const [choice, setChoice] = React.useState(1);
+
   return (
     <main id="main">
       <div class="container">
@@ -43,11 +82,14 @@ const Main = () => {
               method="POST"
             >
               <Grid container spacing={1}>
-                <Grid item md={6} xs={12}>
+                <Grid item md={4} xs={12}>
                   <TextField label="Ονοματεπώνυμο" name="fullname" variant="outlined" fullWidth />
                 </Grid>
-                <Grid item md={6} xs={12}>
+                <Grid item md={4} xs={12}>
                   <TextField label="Email" variant="outlined" name="email" fullWidth />
+                </Grid>
+                <Grid item md={4} xs={12}>
+                  <BasicSelect choice={choice} setChoice={setChoice} />
                 </Grid>
                 <Grid item md={12} xs={12}>
                   <TextField label="Μήνυμα" variant="outlined" name="message" fullWidth multiline minRows={3} />
@@ -56,12 +98,11 @@ const Main = () => {
                   <Button type="submit" variant="contained">Αποστολή</Button>
                 </Grid>
               </Grid>
-              <input type="hidden" name="access_key" value="9295bf8c-b57b-4b7d-84f5-d48f133ad61d" />
-              <input type="checkbox" name="botcheck" class="hidden"  />
+              <input type="hidden" name="access_key" value={contactPaidiatrics(choice)} />
+              <input type="checkbox" name="botcheck" class="hidden" />
             </Box>
           </article>
         </div>
-
       </div>
     </main>
   );
