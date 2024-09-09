@@ -274,7 +274,9 @@ a:hover {
 .lead {
   font-weight: 400;
   /* font-size: 21px; */
-  font-size: 1.2rem;
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .text-msg {
   line-height: 1.7em;
@@ -385,14 +387,14 @@ img {
 }
 .btn-primary {
   color: #fff;
-  background-color: #bd1550;
+  background-color: #30bec7ff;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
   color: #fff;
-  background-color: #e61f65;
+  background-color: rgb(115, 195, 200);
 }
 .btn-action {
   font-weight: bold;
@@ -537,10 +539,10 @@ img {
   color: #333;
   text-decoration: none;
 }
-.thumbnail:hover img {
+/* .thumbnail:hover img {
   filter: saturate(0%);
   -webkit-filter: saturate(0%);
-}
+} */
 .thumbnail:hover .cover {
   opacity: 1;
 }
