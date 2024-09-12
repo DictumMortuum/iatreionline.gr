@@ -34,10 +34,10 @@ const Main = () => {
         <New desc="λογοι απαλλαγης απο τον εμβολιασμο κατα του COVID-19" url="assets/pdf/Λόγοι-απαλλαγής-από-τον-εμβολιασμό-κατά-του-κορωνοϊού-COVID.pdf" />
       </Grid>
       <Grid item xs={12} md={6}>
-        <New desc="επιδημιολογικά δεδομένα για τις ιογενείς λοιμώξεις του αναπνευστικού συστήματος" url="assets/pdf/report_wnv_gr_20240904.pdf" />
+        <New desc="επιδημιολογικα δεδομένα για τις ιογενεις λοιμωξεις του αναπνευστικου συστηματος" url="assets/pdf/report_wnv_gr_20240904.pdf" />
       </Grid>
       <Grid item xs={12} md={6}>
-        <New desc="Εβδομαδιαία Έκθεση Επιδημιολογικής Επιτήρησης της λοίμωξης από τον ιό του Δυτικού Νείλου" url="assets/pdf/ekthesi-epitirisis-anapneustikon-ion-2024-35.pdf" />
+        <New desc="Εβδομαδιαια Εκθεση Επιδημιολογικης Επιτηρησης της λοιμωξης απο τον ιο του Δυτικου Νειλου" url="assets/pdf/ekthesi-epitirisis-anapneustikon-ion-2024-35.pdf" />
       </Grid>
     </Grid>
   </div>

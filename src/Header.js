@@ -1,8 +1,31 @@
-import { col as index_col } from './PageIndex';
+// import { col as index_col } from './PageIndex';
+import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
 import { col as paidiatriko_col } from './PagePaidiatriko';
 import { col as psych_col } from './PagePsych';
 import { col as allergiologiko_col } from './PageAllergiologiko';
 import { col as diet_col } from './PageDiet';
+
+const Gallery = () => {
+  const handleDragStart = (e) => e.preventDefault();
+  const banners = ["banner1.svg", "banner2.svg", "banner3.svg", "banner4.svg", "banner5.svg", "banner6.svg"];
+
+  return (
+    <AliceCarousel
+      mouseTracking
+      autoPlay={true}
+      disableButtonsControls={true}
+      infinite={true}
+      animationDuration={1000}
+      autoPlayInterval={2000}
+      items={
+        banners.map((d, i) => (
+          <img src={`assets/banner/${d}`} key={i} alt="" onDragStart={handleDragStart} role="presentation" />
+        ))
+      }
+    />
+  );
+};
 
 function App() {
   return (
@@ -18,11 +41,6 @@ function App() {
               <li style={{ marginLeft: 5 }}>iatreionline.gr</li>
               <li class="dropdown">
                 <a href={`${process.env.REACT_APP_BASE_URL}/#/`}>Home</a>
-                <div class="dropdown-content">
-                  {index_col.map(d => (
-                    <a href={d.url}>{d.desc}</a>
-                  ))}
-                </div>
               </li>
               <li class="dropdown">
                 <a href={`${process.env.REACT_APP_BASE_URL}/#/paidiatriko`}>Παιδιατρικo</a>
@@ -61,13 +79,7 @@ function App() {
           </div>
         </div>
       </nav>
-      <div id="head" class="parallax" parallax-speed="2">
-        <h1 id="logo" class="text-center">
-          <img class="img-circle" src="assets/images/background.png" alt=""></img>
-          <span class="title"></span>
-          <span class="tagline"></span>
-        </h1>
-      </div>
+      <Gallery />
     </header>
   );
 }
