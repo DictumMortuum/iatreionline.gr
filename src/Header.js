@@ -17,7 +17,7 @@ const Gallery = () => {
       disableButtonsControls={true}
       infinite={true}
       animationDuration={1000}
-      autoPlayInterval={2000}
+      autoPlayInterval={5000}
       items={
         banners.map((d, i) => (
           <img src={`assets/banner/${d}`} key={i} alt="" onDragStart={handleDragStart} role="presentation" />

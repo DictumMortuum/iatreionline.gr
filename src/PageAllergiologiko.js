@@ -8,8 +8,11 @@ export const col = [
     desc: "φωτογραφιες",
     url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/photos`,
   }, {
-    desc: "για το κοινο",
-    url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/koino`,
+    desc: "υπηρεσιες",
+    url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/services`,
+  }, {
+    desc: "ενημερωτικο υλικο",
+    url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/material`,
   }
 ]
 

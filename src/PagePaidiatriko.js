@@ -8,8 +8,11 @@ export const col = [
     desc: "φωτογραφιες",
     url: `${process.env.REACT_APP_BASE_URL}/#/paidiatriko/photos`,
   }, {
-    desc: "για γονεις",
-    url: `${process.env.REACT_APP_BASE_URL}/#/paidiatriko/goneis`,
+    desc: "υπηρεσιες",
+    url: `${process.env.REACT_APP_BASE_URL}/#/paidiatriko/services`,
+  }, {
+    desc: "ενημερωτικο υλικο",
+    url: `${process.env.REACT_APP_BASE_URL}/#/paidiatriko/material`,
   }
 ]
 

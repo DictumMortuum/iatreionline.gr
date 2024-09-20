@@ -5,8 +5,11 @@ export const col = [
     desc: "βιογραφικο",
     url: `${process.env.REACT_APP_BASE_URL}/#/diet/bio`,
   }, {
-    desc: "για το κοινο",
-    url: `${process.env.REACT_APP_BASE_URL}/#/diet/koino`,
+    desc: "υπηρεσιες",
+    url: `${process.env.REACT_APP_BASE_URL}/#/diet/services`,
+  }, {
+    desc: "ενημερωτικο υλικο",
+    url: `${process.env.REACT_APP_BASE_URL}/#/diet/material`,
   }
 ]
 
