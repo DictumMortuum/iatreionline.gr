@@ -1,7 +1,6 @@
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import News from './components/News';
 import Public from './components/Public';
 import { Grid } from '@mui/material';
@@ -16,6 +15,18 @@ export const col = [
   }, {
     desc: "παροχες",
     url: `${process.env.REACT_APP_BASE_URL}/#/paroxes`,
+  }, {
+    desc: "Ο δεκάλογος της υγιεινής διατροφής",
+    url: "assets/pdf/diet.PNG",
+  }, {
+    desc: "Πέντε κλειδιά για ασφαλέστερα τρόφιμα",
+    url: "assets/pdf/5keys-greek.pdf",
+  }, {
+    desc: "Σωστή επιλογή αντιηλιακου",
+    url: "assets/pdf/how-to-select-sunscreen-infographic.pdf",
+  }, {
+    desc: "Σωστός τρόπος πλυσίματος χεριών",
+    url: "assets/pdf/plysimo.pdf"
   }
 ]
 
@@ -60,10 +71,8 @@ const Main = () => {
 
         <div class="col-md-12">
           <ListItem>
-            <ListItemAvatar>
-              <Avatar sx={{ height: 120, width: 120, marginRight: 1 }}>
-                <NotificationsIcon sx={{ height: 100, width: 100 }} />
-              </Avatar>
+            <ListItemAvatar >
+              <Avatar src="assets/svg/sunedrio.svg" sx={{ height: 120, width: 120, marginRight: 1 }} />
             </ListItemAvatar>
             <p class="lead ">Στις 30 Σεπτεμβρίου, στο χώρο του ιατρείου η συνεργαζόμενη διατροφολόγος Ελευθερία Παπαχρήστου θα παρουσιάσει σύγχρονες διατροφικές οδηγίες για τα παιδιά και θα απαντήσει σε ερωτήσεις γονέων. Για δηλώσεις συμμετοχής και περισσότερες πληροφορίες οι ενδιαφερόμενοι θα πρέπει να επικοινωνήσουν με τη γραμματεία (2105789951 και 6937432103).</p>
           </ListItem>
@@ -71,10 +80,8 @@ const Main = () => {
 
         <div class="col-md-12">
           <ListItem>
-            <ListItemAvatar>
-              <Avatar sx={{ height: 120, width: 120, marginRight: 1 }}>
-                <NotificationsIcon sx={{ height: 100, width: 100 }} />
-              </Avatar>
+            <ListItemAvatar >
+              <Avatar src="assets/svg/closed.svg" sx={{ height: 120, width: 120, marginRight: 1 }} />
             </ListItemAvatar>
             <p class="lead ">Το ιατρείο θα παραμείνει κλειστό στις 25 και 28 Οκτωβρίου. Η επικοινωνία των ασθενών θα γίνεται στο κινητό της γραμματείας ή των ιατρών.</p>
           </ListItem>
@@ -89,11 +96,8 @@ const Container = () => {
     <main id="main">
       <div class="container">
         <Grid container spacing={3}>
-          <Grid item xs={8}>
+          <Grid item xs={12}>
             <Main />
-          </Grid>
-          <Grid item xs={4}>
-            <img src="https://placehold.co/400x1000" />
           </Grid>
         </Grid>
       </div>

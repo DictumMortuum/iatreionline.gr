@@ -1,6 +1,6 @@
 import Grid from '@mui/material/Grid';
 
-const New = ({ desc, url }) => {
+export const New = ({ desc, url }) => {
   return (
     <a class="btn-primary" style={{ width: "100%" }} href={url}>
         <pre class="btn-primary btn-lg" style={{
@@ -37,7 +37,7 @@ const Main = () => {
         <New desc="επιδημιολογικα δεδομένα για τις ιογενεις λοιμωξεις του αναπνευστικου συστηματος" url="assets/pdf/report_wnv_gr_20240904.pdf" />
       </Grid>
       <Grid item xs={12} md={6}>
-        <New desc="Εβδομαδιαια Εκθεση Επιδημιολογικης Επιτηρησης της λοιμωξης απο τον ιο του Δυτικου Νειλου" url="assets/pdf/ekthesi-epitirisis-anapneustikon-ion-2024-35.pdf" />
+        <New desc="Εθνικό Πρόγραμμα Εμβολιασμών παιδιών και εφήβων 2024" url="assets/pdf/2024-1.pdf" />
       </Grid>
     </Grid>
   </div>
