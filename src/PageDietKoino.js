@@ -13,7 +13,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition4.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Διατροφική συμβουλευτική στην εγκυμοσύνη και το θηλασμό" />
             </AccordionSummary>
             <AccordionDetails>
@@ -23,7 +23,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition5.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Εισαγωγή στερεών - Διατροφή νηπίου" />
             </AccordionSummary>
             <AccordionDetails>
@@ -33,7 +33,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition1.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Επιλεκτική διατροφή παιδιών" />
             </AccordionSummary>
             <AccordionDetails>
@@ -43,7 +43,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition3.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Παιδική παχυσαρκία" />
             </AccordionSummary>
             <AccordionDetails>
@@ -53,7 +53,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition7.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Διατροφική εκπαίδευση γονέων - Συμβουλευτική για τη διατροφή της οικογένειας" />
             </AccordionSummary>
             <AccordionDetails>
@@ -63,7 +63,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition2.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Διατροφική συμβουλευτική/υποκατάσταση σε Τροφική Αλλεργία" />
             </AccordionSummary>
             <AccordionDetails>
@@ -73,7 +73,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition8.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Διατροφή στα στάδια της ζωής" />
             </AccordionSummary>
             <AccordionDetails>
@@ -83,7 +83,7 @@ const Main = () => {
 
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ alignItems: "center" }}>
-              <Avatar src="https://placehold.co/400" sx={{ height: 100, width: 100 }} />
+              <Avatar src="assets/svg/nutrition9.svg" sx={{ height: 100, width: 100 }} />
               <CardHeader sx={{ textTransform: "capitalize" }} title="Κλινική Διατροφή" />
             </AccordionSummary>
             <AccordionDetails>

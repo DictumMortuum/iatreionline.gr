@@ -32,6 +32,36 @@ const Main = () => {
 
           <Grid container spacing={1}>
             <Grid item xs={12} md={6}>
+              <New desc="οδηγος για την πρωτη σχολικη χρονια" url="assets/pdf/schoolyear.pdf" />
+            </Grid>
+          </Grid>
+        </div>
+
+
+        <div id="general" class="row section featured topspace">
+          <h2 class="section-title"><span>γενικα</span></h2>
+
+          <Grid container spacing={1}>
+            <Grid item xs={12} md={6}>
+              <New desc="εποχικη γριπη" url="assets/pdf/gripi.pdf" />
+            </Grid>
+
+            <Grid item xs={12} md={6}>
+              <New desc="πως να μαθετε να καταπινετε" url="assets/pdf/swallow.png" />
+            </Grid>
+
+            <Grid item xs={12} md={6}>
+              <New desc="5 κλειδια για πιο ασφαλεις παραδοσιακες αγορες τροφιμων" url="assets/pdf/ΚΛΕΙΔΙΑ.jpg" />
+            </Grid>
+          </Grid>
+        </div>
+
+
+        <div class="row section featured topspace">
+          <h2 class="section-title"><span>νεογνικη ηλικια</span></h2>
+
+          <Grid container spacing={1}>
+            <Grid item xs={12} md={6}>
               <New desc="οδηγιες για τις πρώτες ημέρες" url="assets/pdf/firstdays.pdf" />
             </Grid>
             <Grid item xs={12} md={6}>
@@ -46,35 +76,45 @@ const Main = () => {
             <Grid item xs={12} md={6}>
               <New desc="4η εβδομαδα" url="assets/pdf/week4.pdf" />
             </Grid>
-            <Grid item xs={12} md={6}>
-              <New desc="εποχικη γριπη" url="assets/pdf/gripi.pdf" />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <New desc="οδηγος για την πρωτη σχολικη χρονια" url="assets/pdf/schoolyear.pdf" />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <New desc="πως να μαθετε να καταπινετε" url="assets/pdf/swallow.png" />
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <New desc="5 κλειδια για πιο ασφαλεις παραδοσιακες αγορες τροφιμων" url="assets/pdf/ΚΛΕΙΔΙΑ.jpg" />
-            </Grid>
+          </Grid>
+        </div>
+
+        <div class="row section featured topspace">
+          <h2 class="section-title"><span>βρεφικη ηλικια</span></h2>
+
+          <Grid container spacing={1}>
             <Grid item xs={12} md={6}>
               <New desc="οδηγός επιτυχιας για τις σχολικες εξετασεις" url="assets/pdf/success.pages" />
             </Grid>
           </Grid>
-
         </div>
 
-        <div class="row section topspace">
-          <YoutubeEmbed embedId="N4fcYPQQzwk" />
+        <div class="row section featured topspace">
+          <h2 class="section-title"><span>παιδικη ηλικια</span></h2>
+
+          <Grid container spacing={1}>
+          </Grid>
         </div>
 
-        <div class="row section topspace">
-          <YoutubeEmbed embedId="AmeGYKV-L5s" />
+        <div class="row section featured topspace">
+          <h2 class="section-title"><span>εφηβικη ηλικια</span></h2>
+
+          <Grid container spacing={1}>
+          </Grid>
         </div>
 
-        <div class="row section topspace">
-          <YoutubeEmbed embedId="z5kVsWptIwQ" />
+        <div id="#videos" class="row section topspace">
+          <Grid container spacing={1}>
+            <Grid item xs={12} md={6}>
+              <YoutubeEmbed embedId="N4fcYPQQzwk" />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <YoutubeEmbed embedId="AmeGYKV-L5s" />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <YoutubeEmbed embedId="z5kVsWptIwQ" />
+            </Grid>
+          </Grid>
         </div>
       </div>
     </main>
