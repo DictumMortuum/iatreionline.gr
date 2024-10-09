@@ -27,8 +27,20 @@ export const col = [
   }, {
     desc: "ΚΑΘΑΡΙΣΜΌΣ ΧΕΡΙΩΝ",
     url: "assets/pdf/plysimo.pdf"
-  }
-]
+  },
+  // {
+  //   desc: "ημερολογιο γυρεοφοριας",
+  //   url: ""
+  // }
+  {
+    desc: "υπολογισμος τελικου αναστηματος",
+    url: `${process.env.REACT_APP_BASE_URL}/#/apps/height`,
+  },
+  {
+    desc: "υπολογισμος δεικτη μαζας σωματος (BMI) παιδιου",
+    url: `${process.env.REACT_APP_BASE_URL}/#/apps/bmi`,
+  },
+];
 
 const Main = () => {
   return (

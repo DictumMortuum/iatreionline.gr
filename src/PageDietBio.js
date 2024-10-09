@@ -6,7 +6,7 @@ const Main = () => {
           <h2 class="section-title"><span>βιογραφικο διαιτολογου</span></h2>
           <article class="post">
             <header class="entry-header">
-              <h3 class="entry-title">Ελευθερία Παπαχρηστου</h3>
+              <h3 class="entry-title">Ελευθερια Παπαχρηστου</h3>
             </header>
 
             <div class="entry-content lead">

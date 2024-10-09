@@ -29,14 +29,7 @@ const Main = () => {
 
         <div class="row section featured topspace">
           <h2 class="section-title"><span>ενημερωτικο υλικο</span></h2>
-
-          <Grid container spacing={1}>
-            <Grid item xs={12} md={6}>
-              <New desc="οδηγος για την πρωτη σχολικη χρονια" url="assets/pdf/schoolyear.pdf" />
-            </Grid>
-          </Grid>
         </div>
-
 
         <div id="general" class="row section featured topspace">
           <h2 class="section-title"><span>γενικα</span></h2>
@@ -56,9 +49,8 @@ const Main = () => {
           </Grid>
         </div>
 
-
         <div class="row section featured topspace">
-          <h2 class="section-title"><span>νεογνικη ηλικια</span></h2>
+          <h2 class="section-title"><span>βρεφικη ηλικια</span></h2>
 
           <Grid container spacing={1}>
             <Grid item xs={12} md={6}>
@@ -80,19 +72,12 @@ const Main = () => {
         </div>
 
         <div class="row section featured topspace">
-          <h2 class="section-title"><span>βρεφικη ηλικια</span></h2>
-
-          <Grid container spacing={1}>
-            <Grid item xs={12} md={6}>
-              <New desc="οδηγός επιτυχιας για τις σχολικες εξετασεις" url="assets/pdf/success.pages" />
-            </Grid>
-          </Grid>
-        </div>
-
-        <div class="row section featured topspace">
           <h2 class="section-title"><span>παιδικη ηλικια</span></h2>
 
           <Grid container spacing={1}>
+            <Grid item xs={12} md={6}>
+              <New desc="οδηγος για την πρωτη σχολικη χρονια" url="assets/pdf/schoolyear.pdf" />
+            </Grid>
           </Grid>
         </div>
 
@@ -100,10 +85,15 @@ const Main = () => {
           <h2 class="section-title"><span>εφηβικη ηλικια</span></h2>
 
           <Grid container spacing={1}>
+            <Grid item xs={12} md={6}>
+              <New desc="οδηγος επιτυχιας για τις σχολικες εξετασεις" url="assets/pdf/success.pages" />
+            </Grid>
           </Grid>
         </div>
 
         <div id="#videos" class="row section topspace">
+          <h2 class="section-title"><span>βιντεο</span></h2>
+
           <Grid container spacing={1}>
             <Grid item xs={12} md={6}>
               <YoutubeEmbed embedId="N4fcYPQQzwk" />
