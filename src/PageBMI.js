@@ -5,6 +5,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { Card, Button } from '@mui/material';
 
 var rt = {
 	a20:{male: {},female: {}},
@@ -357,6 +358,7 @@ const Main = () => {
   const [sex, setSex] = React.useState("male");
   const [years, setYears] = React.useState(2);
   const [months, setMonths] = React.useState(1);
+  const [result, setResult] = React.useState(false);
   var bmi = calc({ years, months, height, weight, sex })
 
   return (
@@ -368,9 +370,9 @@ const Main = () => {
 
         <div class="row section featured topspace">
           <article class="post">
-            <Grid container spacing={1}>
-              <Grid item xs={6}>
-                <Grid container spacing={1}>
+            <Grid container spacing={1} direction="row" alignItems="center" justifyContent="center" sx={{ margin: "auto", maxWidth: 500 }}>
+              {!result && <Grid item xs={12}>
+                <Grid container spacing={1} component={Card} pl={0} pr={1} pt={1} pb={1}>
                   <Grid item xs={12}>
                     <FormControl fullWidth>
                       <InputLabel id="demo-simple-select-label">Φύλο</InputLabel>
@@ -444,16 +446,48 @@ const Main = () => {
                       }}
                     />
                   </Grid>
+                  <Grid item xs={12}>
+                    <Button
+                      variant="contained"
+                      onClick={(event) => {
+                        setResult(true);
+                      }}
+                    >
+                      υπολογισμος
+                    </Button>
+                  </Grid>
                 </Grid>
-              </Grid>
-              <Grid item xs={6}>
+              </Grid>}
+              {result && <Grid item xs={12}>
+                <Grid container spacing={1} component={Card} pl={0} pr={1} pt={1} pb={1}>
+                  <Grid item xs={12}>
+                    <TextField
+                      fullWidth
+                      label="ΒΜΙ"
+                      disabled={true}
+                      value={bmi.desc}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Button
+                      variant="contained"
+                      onClick={(event) => {
+                        setResult(false);
+                      }}
+                    >
+                      πισω στον υπολογισμο
+                    </Button>
+                  </Grid>
+                </Grid>
+              </Grid> }
+              {/* <Grid item xs={6}>
                 <TextField
                   fullWidth
                   label="ΒΜΙ"
                   disabled={true}
                   value={bmi.desc}
                 />
-              </Grid>
+              </Grid> */}
             </Grid>
           </article>
         </div>
