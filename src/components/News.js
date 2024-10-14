@@ -36,7 +36,7 @@ const Main = () => {
         <New desc="λογοι απαλλαγης απο τον εμβολιασμο κατα του COVID-19" url="assets/pdf/Λόγοι-απαλλαγής-από-τον-εμβολιασμό-κατά-του-κορωνοϊού-COVID.pdf" />
       </Grid>
       <Grid item xs={12} md={6}>
-        <New desc="επιδημιολογικα δεδομενα ιογενων λοιμωξεων αναπνευστικου" url="assets/pdf/report_wnv_gr_20240904.pdf" />
+        <New desc="επιδημιολογικα δεδομενα ιογενων λοιμωξεων αναπνευστικου" url="assets/pdf/ekthesi-epitirisis-anapneustikon-ion-2024-40.pdf" />
       </Grid>
       <Grid item xs={12} md={6}>
         <New desc="Εθνικό Πρόγραμμα Εμβολιασμών παιδιών και εφήβων 2024" url="assets/pdf/2024-1.pdf" />
