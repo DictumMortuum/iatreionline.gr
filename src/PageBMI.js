@@ -5,42 +5,43 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { Card, Button } from '@mui/material';
+import { Card, Button, CardActions } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 var rt = {
-	a20:{male: {},female: {}},
-	a25:{male: {},female: {}},
-	a30:{male: {},female: {}},
-	a35:{male: {},female: {}},
-	a40:{male: {},female: {}},
-	a45:{male: {},female: {}},
-	a50:{male: {},female: {}},
-	a55:{male: {},female: {}},
-	a60:{male: {},female: {}},
-	a65:{male: {},female: {}},
-	a70:{male: {},female: {}},
-	a75:{male: {},female: {}},
-	a80:{male: {},female: {}},
-	a85:{male: {},female: {}},
-	a90:{male: {},female: {}},
-	a95:{male: {},female: {}},
-	a100:{male: {},female: {}},
-	a105:{male: {},female: {}},
-	a110:{male: {},female: {}},
-	a115:{male: {},female: {}},
-	a120:{male: {},female: {}},
-	a125:{male: {},female: {}},
-	a130:{male: {},female: {}},
-	a135:{male: {},female: {}},
-	a140:{male: {},female: {}},
-	a145:{male: {},female: {}},
-	a150:{male: {},female: {}},
-	a155:{male: {},female: {}},
-	a160:{male: {},female: {}},
-	a165:{male: {},female: {}},
-	a170:{male: {},female: {}},
-	a175:{male: {},female: {}},
-	a180:{male: {},female: {}}
+  a20:{male: {},female: {}},
+  a25:{male: {},female: {}},
+  a30:{male: {},female: {}},
+  a35:{male: {},female: {}},
+  a40:{male: {},female: {}},
+  a45:{male: {},female: {}},
+  a50:{male: {},female: {}},
+  a55:{male: {},female: {}},
+  a60:{male: {},female: {}},
+  a65:{male: {},female: {}},
+  a70:{male: {},female: {}},
+  a75:{male: {},female: {}},
+  a80:{male: {},female: {}},
+  a85:{male: {},female: {}},
+  a90:{male: {},female: {}},
+  a95:{male: {},female: {}},
+  a100:{male: {},female: {}},
+  a105:{male: {},female: {}},
+  a110:{male: {},female: {}},
+  a115:{male: {},female: {}},
+  a120:{male: {},female: {}},
+  a125:{male: {},female: {}},
+  a130:{male: {},female: {}},
+  a135:{male: {},female: {}},
+  a140:{male: {},female: {}},
+  a145:{male: {},female: {}},
+  a150:{male: {},female: {}},
+  a155:{male: {},female: {}},
+  a160:{male: {},female: {}},
+  a165:{male: {},female: {}},
+  a170:{male: {},female: {}},
+  a175:{male: {},female: {}},
+  a180:{male: {},female: {}}
 };
 
 rt.a20.male.s = 15.14;
@@ -282,9 +283,9 @@ var lbl_large = "Υπέρβαρο";
 var lbl_extra_large = "Παχυσαρκία";
 
 function calc({ height, weight, sex, years, months }) {
-	var bmr = '';
-	var bmr_status = '';
-	var bmr_class = '';
+  var bmr = '';
+  var bmr_status = '';
+  var bmr_class = '';
   var id;
 
   if (months < 6) {
@@ -293,53 +294,48 @@ function calc({ height, weight, sex, years, months }) {
     id = 'a'+years+5;
   }
 
-  console.log(id, sex, height, isNaN(height))
-
-	if(isNaN(height) || height<=0) {
+  if(isNaN(height) || height<=0) {
     return {
       desc: lbl_height+': '+lbl_not_valid
     }
-	} else if(isNaN(weight) || weight<=0) {
+  } else if(isNaN(weight) || weight<=0) {
     return {
       desc: lbl_height+': '+lbl_not_valid
     }
-	}else{
-		if(0<height && height<2) {
-			height = height * 100;
-		}
-    console.log('2222a', id, sex, height, isNaN(height))
+  }else{
+    if(0<height && height<2) {
+      height = height * 100;
+    }
 
-		height = height/100;
-		height = height*height;
-		bmr = roundNumber(weight/height, 2);
+    height = height/100;
+    height = height*height;
+    bmr = roundNumber(weight/height, 2);
 
-		if(bmr<rt[id][sex]['s']){
-			bmr_status = lbl_small;
-			bmr_class = 'bmr-small';
-		}else if(bmr>rt[id][sex]['xl']){
-			bmr_status = lbl_extra_large;
-			bmr_class = 'bmr-extra-large';
-		}else if(bmr>rt[id][sex]['l']){
-			bmr_status = lbl_large;
-			bmr_class = 'bmr-large';
-		}else{
-			bmr_status = lbl_normal;
-			bmr_class = '';
-		}
-
-    console.log(bmr_class, bmr_status)
+    if(bmr<rt[id][sex]['s']){
+      bmr_status = lbl_small;
+      bmr_class = 'bmr-small';
+    }else if(bmr>rt[id][sex]['xl']){
+      bmr_status = lbl_extra_large;
+      bmr_class = 'bmr-extra-large';
+    }else if(bmr>rt[id][sex]['l']){
+      bmr_status = lbl_large;
+      bmr_class = 'bmr-large';
+    }else{
+      bmr_status = lbl_normal;
+      bmr_class = '';
+    }
 
     return {
       desc: bmr_status,
       bmr_status,
       bmr_class,
     }
-	}
+  }
 }
 
 function roundNumber(num, dec) {
-	var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
-	return result;
+  var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
+  return result;
 }
 
 const parse = v => {
@@ -353,13 +349,13 @@ const parse = v => {
 }
 
 const Main = () => {
-  const [height, setHeight] = React.useState(50.0);
-  const [weight, setWeight] = React.useState(5.0);
-  const [sex, setSex] = React.useState("male");
-  const [years, setYears] = React.useState(2);
-  const [months, setMonths] = React.useState(1);
+  const [height, setHeight] = React.useState("");
+  const [weight, setWeight] = React.useState("");
+  const [sex, setSex] = React.useState("");
+  const [years, setYears] = React.useState("");
+  const [months, setMonths] = React.useState("");
   const [result, setResult] = React.useState(false);
-  var bmi = calc({ years, months, height, weight, sex })
+  const [bmi, setBMI] = React.useState(null);
 
   return (
     <main id="main">
@@ -385,6 +381,7 @@ const Main = () => {
                           setSex(event.target.value);
                         }}
                       >
+                        <MenuItem value=""></MenuItem>
                         <MenuItem value="male">Αγόρι</MenuItem>
                         <MenuItem value="female">Κορίτσι</MenuItem>
                       </Select>
@@ -402,7 +399,7 @@ const Main = () => {
                           setYears(parse(event.target.value));
                         }}
                       >
-                        {[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].map(d => (
+                        {["",2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].map(d => (
                           <MenuItem value={d}>{d}</MenuItem>
                         ))}
                       </Select>
@@ -420,7 +417,7 @@ const Main = () => {
                           setMonths(parse(event.target.value));
                         }}
                       >
-                        {[0,1,2,3,4,5,6,7,8,9,10,11,12].map(d => (
+                        {["",0,1,2,3,4,5,6,7,8,9,10,11,12].map(d => (
                           <MenuItem value={d}>{d}</MenuItem>
                         ))}
                       </Select>
@@ -447,14 +444,28 @@ const Main = () => {
                     />
                   </Grid>
                   <Grid item xs={12}>
-                    <Button
-                      variant="contained"
-                      onClick={(event) => {
-                        setResult(true);
-                      }}
-                    >
-                      υπολογισμος
-                    </Button>
+                    <CardActions>
+                      <Button
+                        variant="contained"
+                        onClick={(event) => {
+                          if(isNaN(years) || isNaN(months) || isNaN(height) || isNaN(weight)) {
+                            setBMI({ desc: "Λάθος τιμές" });
+                          } else {
+                            setBMI(calc({ years, months, height, weight, sex }));
+                          }
+
+                          setResult(true);
+                        }}
+                      >
+                        υπολογισμος
+                      </Button>
+                      <Button
+                        to="/apps/bmiadult"
+                        component={Link}
+                      >
+                        ΒΜΙ ενηλικων
+                      </Button>
+                    </CardActions>
                   </Grid>
                 </Grid>
               </Grid>}
@@ -480,14 +491,6 @@ const Main = () => {
                   </Grid>
                 </Grid>
               </Grid> }
-              {/* <Grid item xs={6}>
-                <TextField
-                  fullWidth
-                  label="ΒΜΙ"
-                  disabled={true}
-                  value={bmi.desc}
-                />
-              </Grid> */}
             </Grid>
           </article>
         </div>

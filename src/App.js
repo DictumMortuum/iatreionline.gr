@@ -24,8 +24,8 @@ import DietBio from './PageDietBio';
 import DietKoino from './PageDietKoino';
 import DietMaterial from './PageDietMaterial';
 import BMI from './PageBMI';
+import BMIAdult from './PageBMIAdult';
 import Height from './PageHeight';
-// import Map from './PageMap';
 import Contact from './PageContact';
 import { HashRouter, Routes, Route } from "react-router-dom";
 
@@ -57,6 +57,7 @@ const App = () => {
         <Route path="/diet/services" element={<DietKoino />} />
         <Route path="/diet/material" element={<DietMaterial />} />
         <Route path="/apps/bmi" element={<BMI />} />
+        <Route path="/apps/bmiadult" element={<BMIAdult />} />
         <Route path="/apps/height" element={<Height />} />
         {/* <Route path="/map" element={<Map />} /> */}
         <Route path="/contact" element={<Contact />} />
