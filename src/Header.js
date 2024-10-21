@@ -1,6 +1,7 @@
 // import { col as index_col } from './PageIndex';
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
+import Drawer from './components/Drawer';
 import { col as paidiatriko_col } from './PagePaidiatriko';
 import { col as psych_col } from './PagePsych';
 import { col as allergiologiko_col } from './PageAllergiologiko';
@@ -29,12 +30,33 @@ const Gallery = () => {
 };
 
 function App() {
+  const [state, setState] = React.useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setState(newOpen);
+  };
+
+  const components = [{
+    name: "Παιδιατρικο",
+    col: paidiatriko_col,
+  }, {
+    name: "Αλλεργιολογικο",
+    col: allergiologiko_col,
+  }, {
+    name: "Ψυχολογος",
+    col: psych_col,
+  }, {
+    name: "Διαιτολογος",
+    col: diet_col,
+  }];
+
   return (
     <header id="header">
+      <Drawer setState={setState} state={state} components={components} />
       <nav class="navbar navbar-default navbar-sticky">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <button onClick={toggleDrawer(true)} type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">

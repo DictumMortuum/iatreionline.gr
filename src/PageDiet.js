@@ -4,12 +4,15 @@ export const col = [
   {
     desc: "βιογραφικο",
     url: `${process.env.REACT_APP_BASE_URL}/#/diet/bio`,
+    link: "/diet/bio",
   }, {
     desc: "υπηρεσιες",
     url: `${process.env.REACT_APP_BASE_URL}/#/diet/services`,
+    link: "/diet/services",
   }, {
     desc: "ενημερωτικο υλικο",
     url: `${process.env.REACT_APP_BASE_URL}/#/diet/material`,
+    link: "/diet/material",
   }
 ]
 

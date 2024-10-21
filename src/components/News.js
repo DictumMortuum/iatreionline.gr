@@ -2,24 +2,24 @@ import Grid from '@mui/material/Grid';
 
 export const New = ({ desc, url }) => {
   return (
-    <a  style={{ width: "100%" }} href={url}>
-        <pre class="btn-lg" style={{
-          // border: 0,
-          textAlign: "center",
-          fontSize: "1.1rem",
-          padding: 40,
-          width: "100%",
-          textTransform: "uppercase",
-          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-          // textShadow: "0 1px 0px #780d33",
-          wordBreak: "normal",
-          borderRadius: 0,
-          verticalAlign: "middle",
-          border: "4px solid #30bec7ff",
-          backgroundColor: "white",
-        }}>
-          {desc.normalize("NFD").replace(/\p{Diacritic}/gu, "")}
-        </pre>
+    <a style={{ width: "100%" }} href={url}>
+      <pre class="btn-lg" style={{
+        // border: 0,
+        textAlign: "center",
+        fontSize: "1.1rem",
+        padding: 40,
+        width: "100%",
+        textTransform: "uppercase",
+        fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+        // textShadow: "0 1px 0px #780d33",
+        wordBreak: "normal",
+        borderRadius: 0,
+        verticalAlign: "middle",
+        border: "4px solid #30bec7ff",
+        backgroundColor: "white",
+      }}>
+        {desc.normalize("NFD").replace(/\p{Diacritic}/gu, "")}
+      </pre>
     </a>
   )
 }

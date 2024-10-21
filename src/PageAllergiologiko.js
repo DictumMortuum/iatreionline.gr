@@ -4,15 +4,19 @@ export const col = [
   {
     desc: "βιογραφικο",
     url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/bio`,
+    link: "/allergiologiko/bio",
   }, {
     desc: "φωτογραφιες",
     url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/photos`,
+    link: "/allergiologiko/photos",
   }, {
     desc: "υπηρεσιες",
     url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/services`,
+    link: "/allergiologiko/services",
   }, {
     desc: "ενημερωτικο υλικο",
     url: `${process.env.REACT_APP_BASE_URL}/#/allergiologiko/material`,
+    link: "/allergiologiko/material",
   }
 ]
 
