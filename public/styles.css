@@ -874,3 +874,9 @@ footer.entry-meta .meta-in {
     max-width: 1080px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 350px;
+  }
+}
