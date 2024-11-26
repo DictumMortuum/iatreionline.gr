@@ -607,6 +607,13 @@ img {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
+.separator {
+  height: 4px;
+  top: .53em;
+  width: 400%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
 .section-title span:before,
 .entry-title span:before {
   right: 100%;
